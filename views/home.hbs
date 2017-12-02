@@ -1,0 +1,63 @@
+<form method="POST" action="/">
+    <head>
+        <title>Bad-Advice-Bot</title>
+
+        <style>
+            .float-left
+            {
+                float: left;
+                display: inline;
+                padding-left: 10%;
+            }
+
+            .float-right
+            {
+                float: right;
+                display: inline;
+                padding-right: 10%;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <div id="botText" class="float-left">
+                <div>
+                    Bad Advice Bot
+                </div>
+                <hr>
+
+                <div>
+                    <!-- Go through every line in chat box's text and display -->
+                    {{#each botText}}
+                        <div>{{this}}</div>
+                    {{/each}}
+                </div>
+
+            </div>
+
+            <div id="user" class="float-right">
+                <div>
+                    User
+                </div>
+                <hr>
+
+                <div>
+                    <!-- Go through every line in user's text and display -->
+                    {{#each userText}}
+                        <div>{{this}}</div>
+                    {{/each}}
+                </div>
+                <br>
+
+                <!-- Area for user to enter text-->
+                <textarea name="userQ" rows="10" cols="70"></textarea>
+                <br>
+                <input type="submit" value="Enter">
+
+            </div>
+        </div>
+
+    </body>
+</form>
