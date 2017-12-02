@@ -7,7 +7,19 @@
  * Chat box logic, takes a question and returns the advice
  */
 function getAdvice(question) {
-    return "Eat them";
+    var dict = [{, , , }]
+    <input type="text" id="A" name="B" />; //User text
+    var input = document.getElementById('A').value;
+    for (var i = 0; i < input.length; i ++) {
+        for(var key in a){
+            var value = a[key];
+                for(var i=0; i < value.length; i++){
+                     if(value[i] == ''){
+                         return("")
+                     }
+                }
+          }
+     }
 }
 
 // Bring in the modules
