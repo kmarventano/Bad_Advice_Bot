@@ -3,23 +3,43 @@
 * awful advice
 */
 
+
+/*
+* Key words for targeted advice
+*/
+const targetedAnswers = {
+    "boyfriend": "A",
+    "girlfriend": "B",
+    "husband": "C",
+    "wife": "D",
+    "friend": "E",
+    "dinner": "F",
+    "breakfast": "G",
+    "lunch": "H",
+    "move": ""
+};
+
+/*
+ * Random advice for when the bot doesn't know what to say
+ */
+const randomAnswers = ["I don't know", "Why are you asking me, I'm a bot",
+"Try asking me later", " ¯\_(ツ)_/¯", "Whatever"];
+
 /*
  * Chat box logic, takes a question and returns the advice
  */
 function getAdvice(question) {
-    var dict = [{, , , }]
-    <input type="text" id="A" name="B" />; //User text
-    var input = document.getElementById('A').value;
-    for (var i = 0; i < input.length; i ++) {
-        for(var key in a){
-            var value = a[key];
-                for(var i=0; i < value.length; i++){
-                     if(value[i] == ''){
-                         return("")
-                     }
-                }
-          }
-     }
+    var words = question.split(" ");
+
+    for (var i = 0; i < words.length; i++){
+        const w = words[i].toLowerCase();
+
+        if (targetedAnswers[w] != undefined){
+            return targetedAnswers[w];
+        }
+    }
+
+    return randomAnswers[Math.floor((Math.random() * (randomAnswers.length - 1)))];
 }
 
 // Bring in the modules
