@@ -23,7 +23,11 @@ const targetedAnswers = {
  * Random advice for when the bot doesn't know what to say
  */
 const randomAnswers = ["I don't know", "Why are you asking me, I'm a bot",
-"Try asking me later", " ¯\_(ツ)_/¯", "Whatever"];
+"Try asking me later", " ¯\_(ツ)_/¯", "Whatever", "Microwave it!",
+"If your significant other is making you cry everyday, ask yourself, 'Am I dating a human or an onion?'", 
+"You should talk to your cat about it", "I wish I could help, but I'm a bot with no free will nor any life experiences",
+"Have you tried putting a stocking over the end of a vacuum to find tiny items like earrings?", 
+"I think your dog knows the answer to this question"];
 
 /*
  * Chat box logic, takes a question and returns the advice
