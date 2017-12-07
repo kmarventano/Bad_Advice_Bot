@@ -27,9 +27,10 @@ const randomAnswers = ["I don't know", "Why are you asking me, I'm a bot",
 "If your significant other is making you cry everyday, ask yourself, 'Am I dating a human or an onion?'", 
 "You should talk to your cat about it", "I wish I could help, but I'm a bot with no free will nor any life experiences",
 "Have you tried putting a stocking over the end of a vacuum to find tiny items like earrings?", 
-"I think your dog knows the answer to this question"];
+"I think your dog knows the answer to this question", "Do you have no one else to talk to?", 
+"According to a survey I found online, people in your situation usually eat a tub of ice cream while crying to 'The Notebook'"];
 
-/*
+/*, "
  * Chat box logic, takes a question and returns the advice
  */
 function getAdvice(question) {
