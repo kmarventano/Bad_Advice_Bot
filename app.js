@@ -8,15 +8,15 @@
 * Key words for targeted advice
 */
 const targetedAnswers = {
-    "boyfriend": "A",
-    "girlfriend": "B",
-    "husband": "C",
-    "wife": "D",
-    "friend": "E",
-    "dinner": "F",
-    "breakfast": "G",
-    "lunch": "H",
-    "move": ""
+    "boyfriend": "Take juggling lessons, guys love that",
+    "girlfriend": "No hablo inglés, lo siento.",
+    "husband": "我是一個寫得不好的殭屍程序，硬編碼的答复",
+    "wife": "Try starting a second secret family, they'll love and respect you more.",
+    "friend": "FIGHT THEM TO THE DEATH",
+    "dinner": "On your budget? Ice soup.",
+    "breakfast": "Maybe you should just go on a diet.",
+    "lunch": "You should totally make spagettio gelatin.",
+    "move": "Cardboard boxes are all the rage right now."
 };
 
 /*
@@ -93,7 +93,6 @@ app.post('/', function (req, res) {
     
     // Find the advice to give
     const advice = getAdvice(question);
-    console.log(advice);
 
     // Add the advice to the chat boxes conversation and question to user's text
     botText.push(advice);
