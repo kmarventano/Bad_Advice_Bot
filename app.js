@@ -100,6 +100,7 @@ app.post('/', function (req, res) {
     res.redirect('/');
 });
 
-// Listen in on 3000
-app.listen(3000);
+// Listen in on 3000 or given port
+var port = process.env.PORT || 3000;
+app.listen(port);
 
